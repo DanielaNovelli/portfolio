@@ -1,0 +1,325 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Newsreader", serif;
+  font-optical-sizing: auto;
+}
+
+header {
+  background-image: url(Assets/3132795.jpg);
+  background-position-y: center;
+  height: 480px;
+  width: 100%;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header nav ul {
+  display: flex;
+  gap: 22px;
+  font-size: 19px;
+  font-weight: 400;
+}
+
+ul,
+ol {
+  list-style: none;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header img {
+  height: 180px;
+}
+
+#check,
+.checkbtn {
+  display: none;
+}
+
+.portada {
+  text-align: center;
+  padding: 2%;
+}
+
+.portada h1 {
+  font-size: 37px;
+  margin-bottom: 15px;
+}
+
+.portada h2 {
+  font-size: 28px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+.portada a {
+  text-align: center;
+  padding: 10px;
+  background-color: black;
+  border-radius: 60px;
+  color: white;
+  width: 120px;
+  font-size: 21px;
+}
+
+.generador{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.generador button{
+  text-align: center;
+  background-color: blue;
+  width: 500px;
+  border-radius: 60px;
+  color: white;
+  font-size: 21px;
+  padding: 1%;
+  margin: 2%;
+}
+
+.generador footer{
+  text-align: center;
+  background-color: rgb(108, 180, 108);
+  border-radius: 60px;
+  color: white;
+  font-size: 21px;
+  padding: 1%;
+  width: 800px;
+}
+
+.sectionclientes{
+  padding: 3%;
+}
+
+.sectionclientes h2,
+.sectionservicios h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 37px;
+  font-weight: 500;
+  padding: 3%;
+}
+
+.containerclientes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.cliente {
+  background-color: #98f08c;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 400px;
+}
+
+.cliente img {
+  width: 300px;
+  height: 200px;
+}
+
+.descripcioncliente {
+  text-align: center;
+  background-color: #98f08c;
+  padding: 0.5%;
+}
+
+.descripcioncliente h2,
+.servicios h2,
+.etapas h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.descripcioncliente h3,
+.servicios h3,
+.etapas h3 {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.containerservicios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+  padding: 0 8%;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #98f08c;
+  box-shadow: 9px 10px 7px 1px rgba(235, 230, 235, 1);
+  border-radius: 10px;
+  width: 300px;
+  height: 350px;
+}
+
+.servicios img {
+  height: 60px;
+}
+
+.containeretapas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  background-color: #98f08c;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.etapas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 300px;
+  height: 330px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.etapas svg {
+  display: block;
+  height: 50px;
+  fill: orange;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.containerFooter {
+  display: flex;
+  gap: 30px;
+  padding: 1%;
+}
+
+footer p {
+  margin: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 768px) {
+
+  .checkbtn {
+    display: block;
+    position: fixed;
+    font-size: 25px;
+    color: black;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+    transition: all 1.2s;
+  }
+
+  body {
+    background-color: red;
+  }
+
+  header {
+    display: block;
+    }
+
+  header nav ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 6%;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: antiquewhite;
+    text-align: center;
+    top: 80px;
+    left: 100%;
+  }
+
+  .containerportada {
+    background-image: url(Assets/3132795.jpg);
+    background-position-y: center;
+    height: 500px;
+  }
+
+  .portada h1 {
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 100px;
+  }
+
+  .portada h2 {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 45px;
+  }
+
+  .portada a {
+    font-size: 18px;
+  }
+
+  .descripcioncliente h3,
+  .servicios h3,
+  .etapas h3 {
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .tituloarticle h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 70px;
+  }
+
+  .containerclientes {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 4%;
+  }
+
+  .descripcioncliente h2,
+  .servicios h2,
+  .etapas h2 {
+    font-size: 20px;
+  }
+
+  .containerservicios {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .containeretapas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
